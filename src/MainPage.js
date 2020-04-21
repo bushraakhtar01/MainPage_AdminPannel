@@ -7,6 +7,7 @@ import Div from './Div';
 import Gallery from './Gallery';
 import Note from './Note';
 import Footer from './Footer';
+import About from './About';
 
 class MainPage extends Component{
 
@@ -17,10 +18,11 @@ class MainPage extends Component{
                    <MainNavBar/>
    
          
-                 <Carousel/>
+                 {/* <Carousel/> */}
                  <Div/>
                  <Gallery/>
                    <Note/>
+              
                    <Footer/>
               </div>
          

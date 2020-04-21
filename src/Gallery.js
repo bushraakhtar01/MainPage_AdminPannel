@@ -1,65 +1,67 @@
 import React, { Component } from 'react';
-
+import './main.css';
 
 class Gallery extends Component{
   render(){
 return(
 
       
-    <div style={{backgroundColor:"#E3AFBC",marginLeft:'10px',width:'98.5%',marginTop:"5px"}}>
-    <h3 style={{textAlign:"center",letterSpacing:'1px',fontWeight:'initial',fontSize:'30px' ,color:"white", paddingTop:'25px',fontFamily:'helvatica'}}>GALLERY</h3>
+    <div id="gallerydiv">
+      {/* heading */}
+    <h3 id="headinggd">GALLERY</h3>
+     {/* images */}
 
-    <div className="ui card" style={{display:'inline-block',marginLeft:'30px'}}>
-        <div className="ui slide masked reveal image" style={{height:'32vh'}}>
+    <div className="ui card" id="card1gd" >
+        <div className="ui slide masked reveal image" id="cardgd1" >
           <img src="khaadigallery1.jpg" className="visible content" />
           <img src="khaadigallery2.jpg" className="hidden content" />
         </div>
-        <div className="content" style={{width:"30vh",marginLeft:'20px'}}>
-        <a className="header" style={{color:"grey"}}>KHAADI COLLECTION 2019</a>
+        <div className="content" id="contentgd1">
+        <a className="header"id="headergd1" >KHAADI COLLECTION 2019</a>
         <hr ></hr>
         <div className="meta">
-          <p className="date" style={{color:"grey"}}>Bring Colors to summer with the latest colorful designs, Hit the summer with colors.</p>
+          <p className="date" >Bring Colors to summer with the latest colorful designs, Hit the summer with colors.</p>
         </div>
       </div>
       </div>
 
-      <div className="ui card" style={{display:'inline-block',marginLeft:'30px'}}>
-        <div className="ui slide masked reveal image" style={{height:'32vh'}}>
+      <div className="ui card" id="card2gd" >
+        <div className="ui slide masked reveal image" id="cardgd2">
           <img src="sapphiregallery1.jpg" className="visible content"  />
           <img src="sapphiregallery2.jpg" className="hidden content" />
         </div>
-        <div className="content" style={{width:"30vh",marginLeft:'20px'}}>
-        <a className="header"  style={{color:"grey"}}>SAPPHIRE COLLECTION 2019</a>
+        <div className="content" id="contentgd2">
+        <a className="header"id="headergd2" >SAPPHIRE COLLECTION 2019</a>
         <hr ></hr>
         <div className="meta">
-          <span className="date" style={{color:"grey"}}>Wear the elegant designs of your favourite outlet in this summer.</span>
+          <span className="date"  >Wear the elegant designs of your favourite outlet in this summer.</span>
         </div>
       </div>
       </div>
-  <div className="ui card" style={{display:'inline-block',marginLeft:'30px'}}>
-        <div className="ui slide masked reveal image" style={{height:'32vh'}}>
+  <div className="ui card" id="card3gd" >
+        <div className="ui slide masked reveal image" id="cardgd3">
           <img src="a1.jpg" className="visible content" />
           <img src="a2.jpg" className="hidden content" />
         </div>
         
-        <div className="content" style={{width:"30vh",marginLeft:'20px'}}>
-        <a className="header"  style={{color:"grey"}}>ALKARAM COLLECTION 2019</a>
+        <div className="content" id="contentgd3">
+        <a className="header" id="headergd3">ALKARAM COLLECTION 2019</a>
         <hr ></hr>
         <div className="meta">
-          <span className="date" style={{color:"grey"}}>Wear the most beautiful and comfy stuff on your occassions.</span>
+          <span className="date">Wear the most beautiful and comfy stuff on your occassions.</span>
         </div>
       </div>
       </div>
-      <div className="ui card" style={{display:'inline-block',marginLeft:'30px'}}>
-        <div className="ui slide masked reveal image" style={{height:'32vh'}}>
+      <div className="ui card" id="card4gd" >
+        <div className="ui slide masked reveal image" id="cardgd4">
           <img src="nishatgallery1.jpg" className="visible content" />
           <img src="nishatgallery2.jpg" className="hidden content" />
         </div>
-        <div className="content" style={{width:"30vh",marginLeft:'20px'}}>
-        <a className="header"  style={{color:"grey"}}>NISHAAT LUXURY 2019</a>
+        <div className="content" id="contentgd4">
+        <a className="header" id="headergd4"  >NISHAAT LUXURY 2019</a>
         <hr ></hr>
         <div className="meta">
-          <span className="date" style={{color:"grey"}}>Festive Collection has embrace engaging designs to enlighten your heartist events.</span>
+          <span className="date" >Festive Collection has embrace engaging designs to enlighten your heartist events.</span>
         </div>
       </div>
       </div>
@@ -81,7 +83,7 @@ export default Gallery;
         <a className="header"  style={{color:"#D79922"}}>KHAADI SUMMER 2019</a>
         <hr ></hr>
         <div className="meta">
-          <span className="date" style={{color:"grey"}}>Bring Colors to summer with the latest colorful designs, Hit the summer with colors.</span>
+          <span className="date" >Bring Colors to summer with the latest colorful designs, Hit the summer with colors.</span>
         </div>
       </div>
     </div>

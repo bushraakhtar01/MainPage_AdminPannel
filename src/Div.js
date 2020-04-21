@@ -1,52 +1,55 @@
 import React, { Component } from 'react';
+import './main.css';
 
 class Div extends Component{
   render(){
     return(
     
-    <div style={{marginTop:"5px", marginLeft:'10px',backgroundColor:'#E3E2DF',width:'98.5%'}} >
-        
-        <h3 style={{textAlign:'center', paddingTop:'25px', fontWeight:'bold'}}>Top Trending</h3>
- 
-        <p style={{textAlign:'center',fontSize:'18px'}}>Choose the best, wear the elegance</p>
-
+    <div className="toptrendingdiv" >
+        {/* heading */}
+        <h3 id="headingtt" >Top Trending</h3>
+          {/* paragraph */}
+        <p id="paratt" >Choose the best, wear the elegance</p>
+  
+             {/* Images */}
         <div >
-      <div className="ui card" style={{display:'inline-block',width:'24.5%',marginLeft:'3px'}}>
+      <div className="ui card"  id="pic1row1tt">
         <div className="image">
           <img src="PicCarousel12.jpg" />
         </div>
       </div>
-      <div className="ui card" style={{display:'inline-block',width:'24.5%',marginLeft:'3px'}}>
+      <div className="ui card"  id="pic2row1tt">
         <div className="image">
           <img src="PicCarousel10.jpg" />
         </div>
       </div>
-      <div className="ui card" style={{display:'inline-block',width:'24.5%',marginLeft:'3px'}}>
+      <div className="ui card"  id="pic3row1tt" >
         <div className="image">
           <img src="PicCarousel2.jpg" />
         </div>
       </div>
-      <div className="ui card" style={{display:'inline-block',width:'24.5%',marginLeft:'3px'}}>
+      <div className="ui card"  id="pic4row1tt">
         <div className="image">
           <img src="PicCarousel7.jpg" />
         </div>
-      </div>      <div className="ui card" style={{display:'inline-block',width:'24.5%',marginLeft:'3px',marginTop:'-10px'}}>
+      </div>     
+       <div className="ui card"  id="pic1row2tt" >
 
         <div className="image">
           <img src="PicCarousel11.jpg" />
         </div>
       </div>
-      <div className="ui card" style={{display:'inline-block',width:'24.5%',marginLeft:'3px',marginTop:'-10px'}}>
+      <div className="ui card"  id="pic2row2tt" >
         <div className="image">
           <img src="PicCarousel4.jpg" />
         </div>
       </div>
-      <div className="ui card" style={{display:'inline-block',width:'24.5%',marginLeft:'3px',marginTop:'-10px'}}>
+      <div className="ui card"  id="pic3row2tt" >
         <div className="image">
           <img src="PicCarousel1.jpg" />
         </div>
       </div>
-      <div className="ui card" style={{display:'inline-block',width:'24.5%',marginLeft:'3px',marginTop:'-10px'}}>
+      <div className="ui card"  id="pic4row2tt" >
         <div className="image">
           <img src="PicCarousel6.jpg" />
         </div>

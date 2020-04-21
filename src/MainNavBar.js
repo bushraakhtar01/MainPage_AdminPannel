@@ -1,55 +1,64 @@
  //import react libraries
  import React, { Component } from 'react';
  import {Link} from "react-router-dom";
+ import './main.css';
+
 
 
  class TopNav extends Component{ 
    render(){
     return(
-      <div>
-        <div>
-         <center><img src="logo.jpg" style={{width:'8%'}}></img></center> 
-         <div style={{textAlign:'right'}}>
-         <Link to='/login'> <p style={{marginTop:'-45px',marginRight:'220px',fontFamily:'helvatica',position:'relative'}} >  
+
+      <div >
+        <div className="mainnavbardv" >
+          {/* logo img */}
+         <center><Link to='/mainpage'><img src="logo.jpg" className="mainlogo" ></img></Link></center> 
+               
+
+               {/* right side text */}
+         <div className="signin" > 
+
+         <Link to='/login'> <p className="signinpara"  >  
            <i class="user outline icon"></i>Sign in</p></Link>
 
-      <p style={{marginTop:'-20px',position:'relative', marginRight:'130px' , fontFamily:'helvatica'}}><i class="edit outline icon">
+      <p className="registerpara" ><i class="edit outline icon">
         </i>Register</p>
-      <p style={{marginTop:'-32px',position:'relative',marginRight:'10px',fontFamily:'helvatica'}}><i class="opencart icon"></i>Shopping Cart</p>
+      <p className="shoppingcartpara" ><i class="opencart icon"></i>Shopping Cart</p>
   
          </div> 
    
         </div>
-<center><nav style={{backgroundColor:'white',marginTop:'30px',width:'60%',height:'5vh'}}>
+  {/* nav */}
+<center><nav className="mainnav" >
   <ul >
-    <li style={{display: 'inline-block', fontFamily:'helvatica',fontWeight:'lighter',marginLeft:'-10px'}}>
+    <li className="newarrivalnav" >
       NEW ARRIVALS
    
     </li>
-    <li style={{display: 'inline-block', fontFamily:'helvatica',fontWeight:'lighter',marginLeft:'30px'}}>
+    <li className="othersnav"  >
    UNSTITCHED
    
     </li>
-    <li style={{display: 'inline-block', fontFamily:'helvatica',fontWeight:'lighter',marginLeft:'30px'}}>
+    <li className="othersnav" >
     STITCHED
     </li>
-    <li style={{display: 'inline-block', fontFamily:'helvatica',fontWeight:'lighter',marginLeft:'30px'}}>
+    <li className="othersnav" >
     LAWN
    
     </li>
-    <li style={{display: 'inline-block', fontFamily:'helvatica',fontWeight:'lighter',marginLeft:'30px'}}>
+    <li className="othersnav" >
      FANCY
    
     </li>
-    <li style={{display: 'inline-block', fontFamily:'helvatica',fontWeight:'lighter',marginLeft:'30px'}}>
+    <li className="othersnav" >
      KURTI
    
     </li>
-    <li style={{display: 'inline-block', fontFamily:'helvatica',fontWeight:'lighter',marginLeft:'30px'}}>
-     BRANDS
+    <li className="othersnav" >
+    <Link to='/brandfullpage'>BRANDS</Link> 
    
     </li>
-    <li style={{display: 'inline-block', fontFamily:'helvatica',fontWeight:'lighter',marginLeft:'90px'}}>
+    <li className="brandnav" >
      </li>
   </ul>
 </nav>

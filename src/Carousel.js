@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import "./main.css";
 
 class Carousel extends Component{
 
@@ -7,11 +8,10 @@ render(){
   
 
      
-    <div id="carousel-example-2" className=" carousel slide carousel-fade" data-ride="carousel" style={{backgorundColor:'red',
-    marginLeft:'10px',width:'98.5%'}}>
+    <div id="carousel-example-2" className=" carousel slide carousel-fade" data-ride="carousel" className="carouseldiv" >
       {/*Indicators*/}
      
-      <ol className="carousel-indicators" style={{position:'absolute'}} >
+      <ol className="carousel-indicators"  >
         <li data-target="#carousel-example-2" data-slide-to={0} className="active"  />
         <li data-target="#carousel-example-2" data-slide-to={1}  />
         <li data-target="#carousel-example-2" data-slide-to={2}  />
@@ -57,14 +57,14 @@ render(){
       </div>
       {/*/.Slides*/}
       {/*Controls*/}
-      <a className="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev" >
+      {/* <a className="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev" >
         <span className="carousel-control-prev-icon" aria-hidden="true" />
         <span className="sr-only">Previous</span>
       </a>
       <a className="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
         <span className="carousel-control-next-icon" aria-hidden="true" />
         <span className="sr-only">Next</span>
-      </a>
+      </a> */}
       {/*/.Controls*/}
     </div>
 

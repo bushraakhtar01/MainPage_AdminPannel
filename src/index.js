@@ -24,6 +24,11 @@ import CreateSapphire from './CreateSapphire';
 import MainPage from './MainPage';
 
 import Alkaram from './Alkaram';
+import AboutFullPage from './AboutFullPage';
+import BrandFullPage from './BrandFullPage'
+import khaadiUI from './KhaadiUI';
+
+import KhaadiUI from './KhaadiUI';
 
 
 
@@ -46,24 +51,14 @@ componentDidMount(){
     }
 }
 render(){
-    // if(this.state.edit==true){ // ye code kyun hai yahan?
-    //     return(
-    //      <Login/>
-        
-    //     );
-    //    }
-
-    //  
- 
-           return(
+     return(
              <div>
         
    
 
                     <Router>
                     <TopNav/>
-{/*           
-          <AdminUI/> */}
+
                     <Route exact path='/' component={Home} />
                     <Route exact path='/mainpage' component={MainPage} />
                
@@ -78,6 +73,9 @@ render(){
                    <Route path='/createApi' component={CreateApi}/>
                    <Route path='/createSapphire' component={CreateSapphire}/>
                    <Route path='/sapphire' component={Sapphire}/>
+                   <Route path='/aboutfullpage' component={AboutFullPage}/>
+                   <Route path='/brandfullpage' component={BrandFullPage}/>
+                   <Route path='/khaadiUI' component={KhaadiUI}/>
                 
           </Router> 
         
@@ -92,25 +90,7 @@ render(){
 
 }
 
-    // <div>
-    //      <TopNav/>
-          
   
-    //       <Router>
-          
-    //       <AdminUI/>
-    //               <Route exact path='/' component={Home} />   
-    //               <Route path='/update' component={Update} />
-                  
-    //               <Route path='/khaadi' component={Khaadi}/>
-    //               <Route path='/createApi' component={CreateApi}/>
-    //               <Route path='/createSapphire' component={CreateSapphire}/>
-    //               <Route path='/sapphire' component={Sapphire}/>
-      
-    //      </Router> 
-      
-    // </div>
- 
 
 
 ReactDOM.render( <Index/>,document.querySelector('#root')
@@ -118,35 +98,5 @@ ReactDOM.render( <Index/>,document.querySelector('#root')
   
 
 
-
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-
-
-
-// const App=()=>{
-// return(
-//     <div>
-// <NavBar/>
-//     <MainTopNav/>
-//          <Carousel/>
-//          <Div/>
-//          <Gallery/>
-//          <Note/>
-//          <Footer/>
-     
-
-         
-       
-//     </div>
        
   
-
-    
-// );
-// };
-
-// ReactDOM.render( <App/>,document.querySelector('#root')
-// );
-   
-
